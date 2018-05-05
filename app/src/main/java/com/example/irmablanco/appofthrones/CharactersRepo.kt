@@ -1,7 +1,7 @@
 package com.example.irmablanco.appofthrones
 
 object CharactersRepo {
-    val character: MutableList<Character> = mutableListOf()
+    val characters: MutableList<Character> = mutableListOf()
 
     get() {
         if (field.isEmpty())
