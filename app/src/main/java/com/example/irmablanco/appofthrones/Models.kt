@@ -1,7 +1,10 @@
 package com.example.irmablanco.appofthrones
 
+import java.util.*
+
 
 data  class Character(
+        var id: String = UUID.randomUUID().toString(),
         var name: String,
         var born: String,
         var title: String,
