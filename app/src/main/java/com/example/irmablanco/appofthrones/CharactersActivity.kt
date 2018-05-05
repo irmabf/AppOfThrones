@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import android.view.View
 import android.widget.Button
 
 class CharactersActivity: AppCompatActivity() {
@@ -11,11 +12,10 @@ class CharactersActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_characters)
 
-        val button: Button = findViewById(R.id.button_character)
-        button.setOnClickListener{
-            val intent: Intent = Intent(this, DetailActivity::class.java)
-            startActivity(intent)
+    }
 
-        }
+    fun showDetails(button: View) {
+        val intent: Intent = Intent(this, DetailActivity::class.java)
+        startActivity(intent)
     }
 }
