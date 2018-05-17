@@ -14,6 +14,7 @@ class CharactersActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_characters)
 
+<<<<<<< HEAD
         val list: RecyclerView = findViewById(R.id.list)
 
         list.layoutManager = LinearLayoutManager(this)
@@ -21,6 +22,10 @@ class CharactersActivity: AppCompatActivity() {
         val characters: MutableList<Character> = CharactersRepo.characters
 
 
+=======
+        val characters: MutableList<Character> = CharactersRepo.characters
+        Log.v("CharactersActivity", "${characters.size}")
+>>>>>>> Add characters repo with singleton model
 
     }
 
